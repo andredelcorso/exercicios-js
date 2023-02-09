@@ -1,9 +1,16 @@
-let país = 'EUA'
+function detectar() {
 
-console.log(`Estou vivendo em: ${país}! Portanto eu sou: `)
+let p = window.document.querySelector('input#país')
+let res = window.document.querySelector('div#resultado')
+let pv = String(p.value)
 
-if (país == 'Brasil') {
-    console.log('Brasileiro')
+if (pv == 'Brasil', 'brasil', 'brasa', 'braza', 'br', 'brazuka', 'brazilian') {
+    
+    res.innerHTML = (`<p>Brasileiro</p>`)
+
 } else {
-    console.log('Estrangeiro!')
+
+    res.innerHTML = (`<p>Estrangeiro!</p>`)
 }
+
+}   
